@@ -105,7 +105,7 @@
 
 /*** Header ***/
 #home {
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
     background: url(../img/bg-header.png) left top no-repeat;
 }
 
@@ -428,3 +428,13 @@
 .testimonial-carousel .owl-dot.active::after {
     background: var(--primary);
 }
+
+.footer-link {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #ffc107; /* Colore di evidenza */
+    transform: translateY(-3px);
+  }
+  
