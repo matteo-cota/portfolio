@@ -3,490 +3,530 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Matteo Cota - Portfolio </title>
+    <title data-translate-key="pageTitle">Matteo Cota - Web Developer Portfolio</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta name="keywords" content="Matteo Cota, Web Developer, Portfolio, Sviluppatore Web, Front End, Back End, Laravel, Vue.js, PHP, Javascript" data-translate-key="metaKeywords">
+    <meta name="description" content="Portfolio di Matteo Cota, Web Developer specializzato in Front End e Back End. Scopri i miei progetti, competenze e contattami per collaborazioni." data-translate-key="metaDescription">
+    <meta name="author" content="Matteo Cota">
 
-    <!-- Favicon -->
     <link href="img/img.png" rel="icon">
 
-    <!-- Google Web Fonts -->
+    <!-- Google Web Fonts Aggiornati -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" integrity="sha512-Cv93isEugYzrYtwAgdXLeBlU1F8qcUT7XGMCXwdUd7JSjuUhXShZaiSkfyWKzzmEfOaUDR6TzuMHXcCSFXYSEw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Libraries Stylesheet -->
+
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
-    <!-- Spinner Start -->
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51" data-bs-theme="light">
+
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="visually-hidden" data-translate-key="spinnerLoading">Caricamento...</span>
         </div>
     </div>
-    <!-- Spinner End -->
 
-   <!-- Inizio Navbar -->
-<nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+   <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
     <a href="index.html" class="navbar-brand d-block d-lg-none">
         <h1 class="text-primary fw-bold m-0">Matteo Cota</h1>
     </a>
-    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" data-translate-aria-label="nav.toggle" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
-        <div class="navbar-nav ms-auto py-0">            
-            <a href="#about" class="nav-item nav-link">Chi sono</a>
-            <a href="#skill" class="nav-item nav-link">Competenze</a>           
+        <div class="navbar-nav ms-auto py-0 align-items-lg-center">
+            <a href="#about" class="nav-item nav-link" data-translate-key="nav.about">Chi sono</a>
+            <a href="#skill" class="nav-item nav-link" data-translate-key="nav.skills">Competenze</a>
         </div>
         <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
-            <h1 class="text-primary fw-bold m-0">Matteo Cota</h1>
+            <h1 class="text-primary fw-bold m-0 logo-text-brand">Matteo Cota</h1>
         </a>
-        <div class="navbar-nav me-auto py-0">
-            <a href="#project" class="nav-item nav-link">Progetti</a>
-            <a href="#contact" class="nav-item nav-link">Contatti</a>
+        <div class="navbar-nav me-auto py-0 align-items-lg-center">
+            <a href="#project" class="nav-item nav-link" data-translate-key="nav.projects">Progetti</a>
+            <a href="#contact" class="nav-item nav-link" data-translate-key="nav.contact">Contatti</a>
+            <div class="nav-item dropdown ms-lg-3">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="languageDropdown">
+                    <i class="fas fa-globe me-1"></i> <span id="currentLangDisplay">IT</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end m-0 border-0 shadow-sm" aria-labelledby="languageDropdown">
+                    <button class="dropdown-item lang-switch" data-lang="it">
+                        <span class="fi fi-it me-2"></span>Italiano
+                    </button>
+                    <button class="dropdown-item lang-switch" data-lang="en">
+                        <span class="fi fi-gb me-2"></span>English
+                    </button>
+                </div>
+            </div>
+            <div class="nav-item ms-lg-3">
+                <button class="btn btn-sm btn-outline-primary rounded-circle" id="darkModeToggle" type="button" data-translate-title="nav.toggleTheme" title="Cambia Tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
         </div>
     </div>
 </nav>
-<!-- Fine Navbar -->
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-light my-6 mt-0" id="home">
+    <header class="container-fluid bg-light my-6 mt-0" id="home">
         <div class="container">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                    <h3 class="text-primary mb-3">Sono</h3>
-                    <h1 class="display-3 mb-3">Matteo Cota</h1>
+                <div class="col-lg-6 py-6 pb-0 pt-lg-0 wow fadeIn" data-wow-delay="0.1s">
+                    <h3 class="text-primary mb-3" data-translate-key="hero.iAm">// Sono</h3>
+                    <h1 class="display-3 mb-3 name-title" data-translate-key="hero.name">Matteo Cota</h1>
                     <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Web Developer, Front End Developer, Back End Developer</div>
-                    <div class="d-flex align-items-center pt-5">
-                        <a href="Matteo Cota - CV.pdf" class="btn btn-primary py-3 px-4 me-5">Download CV</a>                        
+                    <div class="typed-text d-none" data-translate-key="hero.typedText">Web Developer, Front End Developer, Back End Developer, Problem Solver Creativo</div>
+                    <p class="mt-4 lead text-secondary-emphasis" data-translate-key="hero.description">
+                        Trasformo idee in codice, creando esperienze web coinvolgenti e funzionali.
+                    </p>
+                    <div class="d-flex align-items-center pt-4">
+                        <a href="Matteo Cota - CV.pdf" class="btn btn-primary py-3 px-4 me-4" download><span data-translate-key="hero.downloadCv">Download CV</span> <i class="fas fa-download ms-2"></i></a>
+                        <a href="#contact" class="btn btn-outline-primary py-3 px-4"><span data-translate-key="hero.contactMe">Contattami</span> <i class="fas fa-paper-plane ms-2"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="img/img.png" alt="">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <img class="img-fluid profile-image" src="img/img.png" alt="Foto profilo di Matteo Cota">
                 </div>
             </div>
         </div>
+    </header>
+
+      <!-- Inizio Divisore Ondulato SVG -->
+      <div class="section-divider wow fadeIn" data-wow-delay="0.1s">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31.74,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
     </div>
-    <!-- Header End -->
+    <!-- Fine Divisore Ondulato SVG -->
 
-    <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
-
-    <!-- Inizio About -->
-<div class="container-xxl py-6" id="about">
-    <div class="container">
-        <div class="row g-5">
-            <!-- Sezione Informazioni -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="d-flex align-items-center mb-5">
-                    <div class="years flex-shrink-0 text-center me-4">
-                        <!-- Aggiornato a 1 ann0 di esperienza -->
-                        <h1 class="display-1 mb-0">1</h1>
-                        <h5 class="mb-0">Anno</h5>
-                    </div>
-                    <h3 class="lh-base mb-0">di esperienza come Web Developer</h3>
-                </div>
-                <p class="mb-4">
-                    Sono un web developer appassionato e orientato ai risultati, specializzato nello sviluppo di soluzioni web moderne e performanti. 
-                    Grazie alla mia esperienza, sono in grado di trasformare idee innovative in progetti digitali di successo.
-                </p>
-                
-                <p class="mb-3">
-                    <i class="far fa-check-circle text-primary me-3"></i>Progetti personalizzati e di alta qualità
-                </p>
-                
-                <a class="btn btn-primary py-3 px-5 mt-3" href="#portfolio">Scopri di più</a>
-            </div>
-            <!-- Sezione Progetti -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="row g-3 mb-4">
-                    <div class="col-sm-6">
-                        <!-- Immagine del progetto 1 -->
-                        <img class="img-fluid rounded" src="img/1.jpeg" alt="Screenshot progetto 1">
-                    </div>
-                    <div class="col-sm-6">
-                        <!-- Immagine del progetto 2 -->
-                        <img class="img-fluid rounded" src="img/2.jpg" alt="Screenshot progetto 2">
-                    </div>
-                </div>
-                <p class="mb-4">
-                    Ho collaborato con realtà diverse, realizzando siti web responsive e applicazioni complesse, sempre con un occhio attento al design e alla user experience.
-                </p>
-                <div class="d-flex align-items-center mb-3">
-                    <h5 class="border-end pe-3 me-3 mb-0">Progetti completati</h5>
-                    
-                    <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">67</h2>
-                </div>
-                <p class="mb-0">
-                    La mia dedizione e competenza mi permettono di offrire soluzioni digitali su misura, che aiutano i clienti a raggiungere i loro obiettivi di business.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Fine About -->
-
-
-   <!-- Expertise Start -->
-<div class="container-xxl py-6 pb-5" id="skill">
-    <div class="container">
-        <div class="row g-5">
-            <!-- Sezione Competenze -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="display-5 mb-5">Competenze & Formazione</h1>
-                <p class="mb-4">
-                    Sono un Web Developer appassionato e sempre aggiornato sulle ultime tecnologie. 
-                    La mia esperienza mi ha permesso di sviluppare soluzioni web moderne, ottimizzate e responsive, 
-                    combinando estetica e funzionalità per creare esperienze utente di alto livello.
-                </p>
-                <h3 class="mb-4">Le mie competenze</h3>
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">HTML</h6>
-                                <h6 class="font-weight-bold">98%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 98%;" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">CSS</h6>
-                                <h6 class="font-weight-bold">95%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">PHP</h6>
-                                <h6 class="font-weight-bold">90%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Javascript</h6>
-                                <h6 class="font-weight-bold">92%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 92%;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Laravel</h6>
-                                <h6 class="font-weight-bold">95%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Vue.Js</h6>
-                                <h6 class="font-weight-bold">88%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Sezione Formazione -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                <ul class="nav nav-pills rounded border border-2 border-primary mb-5">                    
-                    <li class="nav-item">
-                        <button class="btn btn-primary py-3 px-5 mt-3" data-bs-toggle="pill" href="#tab-2">Formazione</button>
-                    </li>
-                </ul>                
-                <div id="tab-2" class="tab-pane fade show p-0">
-                    <div class="row gy-4 gx-4">
-                        <div class="col-sm-4">
-                            <h5>Full Stack Web Developer</h5>
-                            <hr class="text-primary my-2">
-                            <p class="text-primary mb-1">06/2024 - 12/2024</p>
-                            <h6 class="mb-0">Boolean</h6>
-                        </div>
-                        <div class="col-sm-4">
-                            <h5>Google Digital Training</h5>
-                            <hr class="text-primary my-2">
-                            <p class="text-primary mb-1">10/2022</p>
-                            <h6 class="mb-0">Google</h6>
-                        </div>
-                        <div class="col-sm-4">
-                            <h5>Crescere in Digitale</h5>
-                            <hr class="text-primary my-2">
-                            <p class="text-primary mb-1">01/2016</p>
-                            <h6 class="mb-0">Google</h6>
-                        </div>                            
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Expertise End -->
-
-
-    <!-- Inizio Progetti -->
-    <div class="container-xxl py-6 pt-5" id="project">
+    <section class="container-xxl py-6" id="about">
         <div class="container">
-            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="years flex-shrink-0 text-center me-4">
+                            <h1 class="display-1 mb-0 text-primary">1</h1>
+                            <h5 class="mb-0" data-translate-key="about.years">Anno</h5>
+                        </div>
+                        <h3 class="lh-base mb-0 experience-text">
+                            <span data-translate-key="about.yearsSuffix">di esperienza nello sviluppo web</span> <span class="text-primary" data-translate-key="about.fullstack">full-stack</span>.
+                        </h3>
+                    </div>
+                    <p class="mb-4">
+                        <span data-translate-key="about.description1">Sono un web developer con una solida base nello sviluppo front-end e back-end. Mi appassiona creare soluzioni digitali</span> <strong class="text-primary" data-translate-key="about.strongText">performanti, intuitive e visivamente curate</strong>.
+                    </p>
+                    <p class="mb-4" data-translate-key="about.description2">
+                        La mia curiosità mi spinge a rimanere costantemente aggiornato sulle ultime tecnologie e best practice del settore, per trasformare idee complesse in progetti web di successo.
+                    </p>
+                    <div class="mb-4">
+                        <p class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><span data-translate-key="about.listItem1">Siti web responsive e moderni</span></p>
+                        <p class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><span data-translate-key="about.listItem2">Applicazioni web robuste e scalabili</span></p>
+                        <p class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><span data-translate-key="about.listItem3">Attenzione ai dettagli e alla User Experience</span></p>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="#project"><span data-translate-key="about.viewProjectsBtn">I Miei Progetti</span> <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded shadow-sm about-image" src="img/1.jpeg" alt="Esempio di design web responsive">
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded shadow-sm about-image" src="img/2.jpg" alt="Esempio di interfaccia applicazione web">
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start border-start border-primary border-4 ps-4 mb-4">
+                        <h2 class="text-primary fw-bold mb-0 me-3" data-toggle="counter-up">67</h2>
+                        <h5 class="mb-0" data-translate-key="about.completedProjectsCounter">Progetti Completati con Successo</h5>
+                    </div>
+                    <p class="mb-0 fst-italic" data-translate-key="about.quote">
+                        "Dalla landing page all'applicazione complessa, ogni progetto è un'opportunità per creare valore digitale."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-xxl py-6 pb-5 bg-light" id="skill">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-5 mb-5 title-section" data-translate-key="skills.sectionTitle">Competenze & Formazione</h1>
+                <p class="lead mb-5" data-translate-key="skills.sectionSubtitle">Ecco le tecnologie con cui lavoro e il mio percorso formativo.</p>
+            </div>
+            <div class="row g-5">
+                <!-- NUOVA SEZIONE COMPETENZE (SENZA BARRE) -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h3 class="mb-4" data-translate-key="skills.technicalSkills">Competenze Tecniche</h3>
+                    <div class="skills-list">
+                        <div class="mb-4">
+                            <h5 class="skills-category-title"><i class="fas fa-code me-2"></i>Front-End</h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="skill-tag"><i class="fab fa-html5 me-1 text-danger"></i> HTML</span>
+                                <span class="skill-tag"><i class="fab fa-css3-alt me-1 text-primary"></i> CSS</span>
+                                <span class="skill-tag"><i class="fab fa-js me-1 text-warning"></i> JavaScript</span>
+                                <span class="skill-tag"><i class="fab fa-vuejs me-1 text-success"></i> Vue.js</span>
+                                <span class="skill-tag"><i class="fab fa-bootstrap me-1" style="color: #7952B3;"></i> Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h5 class="skills-category-title"><i class="fas fa-server me-2"></i>Back-End</h5>
+                             <div class="d-flex flex-wrap gap-2">
+                                <span class="skill-tag"><i class="fab fa-php me-1" style="color: #777BB4;"></i> PHP</span>
+                                <span class="skill-tag"><i class="fab fa-laravel me-1" style="color: #FF2D20;"></i> Laravel</span>
+                                <span class="skill-tag"><i class="fas fa-database me-1" style="color: #00758F;"></i> MySQL</span>
+                            </div>
+                        </div>
+                         <div class="mb-4">
+                            <h5 class="skills-category-title"><i class="fas fa-tools me-2"></i>Altri Strumenti & Concetti</h5>
+                             <div class="d-flex flex-wrap gap-2">
+                                <span class="skill-tag"><i class="fab fa-git-alt me-1" style="color: #F05032;"></i> Git</span>
+                                
+                                <span class="skill-tag"><i class="fas fa-network-wired me-1"></i> REST API</span>
+                                <span class="skill-tag"><i class="fas fa-search me-1"></i> SEO Basics</span>
+                                <span class="skill-tag"><i class="fas fa-mobile-alt me-1"></i> Responsive Design</span>
+                             </div>
+                        </div>
+                         <div class="mt-4">
+                            <p class="fst-italic text-muted" data-translate-key="skills.learningContinues"> <!-- Aggiungi chiave traduzione -->
+                                Sono sempre in fase di apprendimento e sperimentazione di nuove tecnologie!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FINE NUOVA SEZIONE COMPETENZE -->
+    
+                <!-- Sezione Formazione (Layout migliorato con Card) -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                     <h3 class="mb-4" data-translate-key="skills.educationTitle">Formazione</h3>
+                     <div class="education-timeline">
+                         <div class="timeline-item mb-4">
+                             <div class="timeline-icon bg-primary text-white"><i class="fas fa-graduation-cap"></i></div>
+                             <div class="timeline-content card shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title" data-translate-key="skills.booleanExpTitle">Full Stack Web Developer</h5>
+                                    <p class="card-subtitle mb-2 text-muted" data-translate-key="skills.booleanExpDate">06/2024 - 12/2024 | Boolean</p>
+                                    <p class="card-text small" data-translate-key="skills.booleanExpDesc">Corso intensivo focalizzato su tecnologie front-end (HTML, CSS, JS, Vue.js) e back-end (PHP, Laravel, MySQL).</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="timeline-item mb-4">
+                            <div class="timeline-icon bg-warning text-dark"><i class="fab fa-google"></i></div>
+                            <div class="timeline-content card shadow-sm">
+                               <div class="card-body">
+                                   <h5 class="card-title" data-translate-key="skills.googleDigitalTitle">Concetti di base del Marketing Digitale</h5>
+                                   <p class="card-subtitle mb-2 text-muted" data-translate-key="skills.googleDigitalDate">10/2022 | Google Digital Training</p>
+                                   <p class="card-text small" data-translate-key="skills.googleDigitalDesc">Certificazione sulle basi del marketing online, SEO, SEM e social media marketing.</p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="timeline-item mb-4">
+                            <div class="timeline-icon bg-info text-white"><i class="fas fa-lightbulb"></i></div>
+                            <div class="timeline-content card shadow-sm">
+                               <div class="card-body">
+                                    <h5 class="card-title" data-translate-key="skills.googleGrowTitle">Crescere in Digitale</h5>
+                                    <p class="card-subtitle mb-2 text-muted" data-translate-key="skills.googleGrowDate">01/2016 | Google & Unioncamere</p>
+                                    <p class="card-text small" data-translate-key="skills.googleGrowDesc">Progetto formativo sulle competenze digitali per l'inserimento nel mondo del lavoro.</p>
+                               </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-xxl py-6 pt-5" id="project">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.2s">
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">I Miei Progetti</h1>
+                    <h1 class="display-5 mb-0 title-section" data-translate-key="projects.sectionTitle">I Miei Progetti</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
                     <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
-                        <li class="mx-3 active" data-filter="*">Tutti i Progetti</li>
-                        <li class="mx-3" data-filter=".first">Siti Web</li>
-                        <li class="mx-3" data-filter=".second">Applicazioni Web</li>
+                        <li class="mx-3 active" data-filter="*" data-translate-key="projects.filterAll">Tutti</li>
+                        <li class="mx-3" data-filter=".first" data-translate-key="projects.filterWeb">Siti Web</li>
+                        <li class="mx-3" data-filter=".second" data-translate-key="projects.filterApps">Applicazioni</li>
                     </ul>
                 </div>
             </div>
-            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/boolando.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/boolando.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                    <div class="portfolio-wrapper shadow-sm rounded">
+                        <img class="img-fluid" src="img/boolando.png" alt="Screenshot Progetto Boolando">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h5 class="text-white mb-2" data-translate-key="projects.boolandoTitle">Boolando</h5>
+                                <p class="text-white-50 small mb-3" data-translate-key="projects.boolandoDesc">Replica E-commerce (HTML/CSS)</p>
+                                <a class="btn btn-sm btn-outline-light m-1" href="img/boolando.png" data-lightbox="portfolio" data-translate-title="projects.boolandoDetail" title="Vedi Dettaglio Boolando"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-sm btn-outline-light m-1" href="#" target="_blank" rel="noopener noreferrer" data-translate-title="projects.boolandoVisit" title="Visita il sito (link mancante)"><i class="fa fa-link"></i></a>
+                                <a class="btn btn-sm btn-outline-light m-1" href="#" target="_blank" rel="noopener noreferrer" data-translate-title="projects.boolandoCode" title="Vedi Codice (link mancante)"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/boolflix.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/boolflix.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                     <div class="portfolio-wrapper shadow-sm rounded">
+                        <img class="img-fluid" src="img/boolflix.jpg" alt="Screenshot Progetto Boolflix">
+                        <div class="portfolio-overlay">
+                             <div class="portfolio-content">
+                                <h5 class="text-white mb-2" data-translate-key="projects.boolflixTitle">Boolflix</h5>
+                                <p class="text-white-50 small mb-3" data-translate-key="projects.boolflixDesc">App Catalogo Film/Serie TV (Vue.js, API)</p>
+                                <a class="btn btn-sm btn-outline-light m-1" href="img/boolflix.jpg" data-lightbox="portfolio" data-translate-title="projects.boolflixDetail" title="Vedi Dettaglio Boolflix"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-sm btn-outline-light m-1" href="#" target="_blank" rel="noopener noreferrer" data-translate-title="projects.boolflixVisit" title="Visita l'app (link mancante)"><i class="fa fa-link"></i></a>
+                                <a class="btn btn-sm btn-outline-light m-1" href="#" target="_blank" rel="noopener noreferrer" data-translate-title="projects.boolflixCode" title="Vedi Codice (link mancante)"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/dc-comics.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/dc-comics.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                     <div class="portfolio-wrapper shadow-sm rounded">
+                        <img class="img-fluid" src="img/dc-comics.png" alt="Screenshot Progetto DC Comics">
+                        <div class="portfolio-overlay">
+                             <div class="portfolio-content">
+                                <h5 class="text-white mb-2" data-translate-key="projects.dcComicsTitle">DC Comics</h5>
+                                <p class="text-white-50 small mb-3" data-translate-key="projects.dcComicsDesc">Sito Vetrina (Laravel)</p>
+                                <a class="btn btn-sm btn-outline-light m-1" href="img/dc-comics.png" data-lightbox="portfolio" data-translate-title="projects.dcComicsDetail" title="Vedi Dettaglio DC Comics"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-sm btn-outline-light m-1" href="#" target="_blank" rel="noopener noreferrer" data-translate-title="projects.dcComicsVisit" title="Visita il sito (link mancante)"><i class="fa fa-link"></i></a>
+                                <a class="btn btn-sm btn-outline-light m-1" href="#" target="_blank" rel="noopener noreferrer" data-translate-title="projects.dcComicsCode" title="Vedi Codice (link mancante)"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/homepage boolbnb.JPG" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/homepage boolbnb.JPG" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                     <div class="portfolio-wrapper shadow-sm rounded">
+                        <img class="img-fluid" src="img/homepage boolbnb.JPG" alt="Screenshot Progetto BoolBnB">
+                        <div class="portfolio-overlay">
+                             <div class="portfolio-content">
+                                <h5 class="text-white mb-2" data-translate-key="projects.boolbnbTitle">BoolBnB</h5>
+                                <p class="text-white-50 small mb-3" data-translate-key="projects.boolbnbDesc">Piattaforma Affitti (Full Stack - Team Project)</p>
+                                <a class="btn btn-sm btn-outline-light m-1" href="img/homepage boolbnb.JPG" data-lightbox="portfolio" data-translate-title="projects.boolbnbDetail" title="Vedi Dettaglio BoolBnB"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-sm btn-outline-light m-1" href="#" target="_blank" rel="noopener noreferrer" data-translate-title="projects.boolbnbVisit" title="Visita il sito (link mancante)"><i class="fa fa-link"></i></a>
+                                <a class="btn btn-sm btn-outline-light m-1" href="#" target="_blank" rel="noopener noreferrer" data-translate-title="projects.boolbnbCode" title="Vedi Codice (link mancante)"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/WhatsApp boolean.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/WhatsApp boolean.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                     <div class="portfolio-wrapper shadow-sm rounded">
+                        <img class="img-fluid" src="img/WhatsApp boolean.jpg" alt="Screenshot Progetto Boolzapp">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h5 class="text-white mb-2" data-translate-key="projects.boolzappTitle">Boolzapp</h5>
+                                <p class="text-white-50 small mb-3" data-translate-key="projects.boolzappDesc">Replica Interfaccia Chat (Vue.js)</p>
+                                <a class="btn btn-sm btn-outline-light m-1" href="img/WhatsApp boolean.jpg" data-lightbox="portfolio" data-translate-title="projects.boolzappDetail" title="Vedi Dettaglio Boolzapp"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-sm btn-outline-light m-1" href="#" target="_blank" rel="noopener noreferrer" data-translate-title="projects.boolzappVisit" title="Visita l'app (link mancante)"><i class="fa fa-link"></i></a>
+                                <a class="btn btn-sm btn-outline-light m-1" href="#" target="_blank" rel="noopener noreferrer" data-translate-title="projects.boolzappCode" title="Vedi Codice (link mancante)"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/spotify-lg.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/spotify-lg.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                     <div class="portfolio-wrapper shadow-sm rounded">
+                        <img class="img-fluid" src="img/spotify-lg.png" alt="Screenshot Progetto Spotify Web">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h5 class="text-white mb-2" data-translate-key="projects.spotifyTitle">Spotify Web</h5>
+                                <p class="text-white-50 small mb-3" data-translate-key="projects.spotifyDesc">Replica Interfaccia Player (HTML/CSS)</p>
+                                <a class="btn btn-sm btn-outline-light m-1" href="img/spotify-lg.png" data-lightbox="portfolio" data-translate-title="projects.spotifyDetail" title="Vedi Dettaglio Spotify"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-sm btn-outline-light m-1" href="#" target="_blank" rel="noopener noreferrer" data-translate-title="projects.spotifyVisit" title="Visita il sito (link mancante)"><i class="fa fa-link"></i></a>
+                                <a class="btn btn-sm btn-outline-light m-1" href="#" target="_blank" rel="noopener noreferrer" data-translate-title="projects.spotifyCode" title="Vedi Codice (link mancante)"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Fine Progetti -->
+    </section>
 
-   <!-- Inizio Contatti -->
-<div class="container" id="contact">
-    <div class="container py-5">
-      <!-- Titolo -->
-      <div class="row g-5 mb-5 text-center wow fadeInUp" data-wow-delay="0.1s">
-        <div class="col">
-          <h1 class="display-5 fw-bold">Contatti</h1>
-          <p class="lead text-muted">Sono sempre disponibile per discutere di nuove opportunità lavorative e collaborazioni.</p>
-        </div>
+<section class="container-xxl py-6" id="contact">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h1 class="display-5 mb-3 title-section" data-translate-key="contact.sectionTitle">Mettiamoci in Contatto</h1>
+          <p class="lead text-muted mb-5" data-translate-key="contact.sectionSubtitle">Hai un progetto in mente o vuoi discutere una collaborazione? <br> Non esitare a scrivermi!</p>
       </div>
-      <!-- Informazioni di Contatto -->
-      <div class="row g-5 justify-content-center">
-        <div class="col-lg-6 col-md-8">
-          <div class="card border-0 shadow-lg rounded p-4 wow fadeInUp" data-wow-delay="0.2s" style="background-color: #f8f9fa;">
-            <div class="card-body">             
-              <!-- Sezione Scrivimi -->
-              <div class="mb-4">
-                <p class="mb-1 text-uppercase fw-bold" style="letter-spacing: 1px;">Scrivimi</p>
-                <h5 class="fw-bold text-primary">
-                  <a href="mailto:matteocota@outlook.it" class="text-decoration-none text-primary">matteocota@outlook.it</a>
-                </h5>
-                <hr class="w-25 border-primary opacity-75">
+      <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="contact-card text-center p-4 rounded shadow-sm h-100">
+                  <div class="contact-icon bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                      <i class="fas fa-envelope fa-2x"></i>
+                  </div>
+                  <h5 class="mb-2" data-translate-key="contact.emailTitle">Email</h5>
+                  <p class="text-muted" data-translate-key="contact.emailDesc">Scrivimi direttamente per richieste o proposte.</p>
+                  <a href="mailto:matteocota@outlook.it" class="text-primary fw-bold text-decoration-none contact-link">matteocota@outlook.it</a>
               </div>
-              
-              <!-- Sezione Seguimi -->
-              <div>
-                <p class="mb-3 text-uppercase fw-bold" style="letter-spacing: 1px;">Seguimi</p>
-                <div class="d-flex justify-content-center">
-                  <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/MatteoCotaOfficial/?locale=it_IT" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a class="btn btn-square btn-danger me-2" href="https://www.instagram.com/matteocota/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                  <a class="btn btn-square btn-info me-2" href="https://www.linkedin.com/in/matteo-cota/" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                  <a class="btn btn-square btn-secondary me-2" href="https://github.com/matteo-cota" target="_blank">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="contact-card text-center p-4 rounded shadow-sm h-100">
+                  <div class="contact-icon bg-secondary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                     <i class="fas fa-share-alt fa-2x"></i>
+                  </div>
+                  <h5 class="mb-2" data-translate-key="contact.socialTitle">Seguimi</h5>
+                   <p class="text-muted" data-translate-key="contact.socialDesc">Rimani aggiornato sui miei lavori e connessioni.</p>
+                   <div class="d-flex justify-content-center mt-3">
+                       <a class="btn btn-square btn-outline-primary mx-1 social-icon" href="https://www.linkedin.com/in/matteo-cota/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                       <a class="btn btn-square btn-outline-dark mx-1 social-icon" href="https://github.com/matteo-cota" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                       <a class="btn btn-square btn-outline-danger mx-1 social-icon" href="https://www.instagram.com/matteocota/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                       <a class="btn btn-square btn-outline-info mx-1 social-icon" href="https://www.facebook.com/MatteoCotaOfficial/?locale=it_IT" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  </div>
+              </div>
+          </div>
+          <!-- Form non attivo
+          <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.7s">
+             <div class="card p-4 shadow-sm">
+                 <form action="TUO_ENDPOINT_FORM" method="POST">
+                     <div class="row g-3">
+                         <div class="col-md-6">
+                             <div class="form-floating">
+                                 <input type="text" class="form-control" id="name" name="name" data-translate-placeholder="contact.formName" placeholder="Il tuo Nome" required>
+                                 <label for="name" data-translate-key="contact.formName">Il tuo Nome</label>
+                             </div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="form-floating">
+                                 <input type="email" class="form-control" id="email" name="email" data-translate-placeholder="contact.formEmail" placeholder="La tua Email" required>
+                                 <label for="email" data-translate-key="contact.formEmail">La tua Email</label>
+                             </div>
+                         </div>
+                         <div class="col-12">
+                             <div class="form-floating">
+                                 <input type="text" class="form-control" id="subject" name="subject" data-translate-placeholder="contact.formSubject" placeholder="Oggetto" required>
+                                 <label for="subject" data-translate-key="contact.formSubject">Oggetto</label>
+                             </div>
+                         </div>
+                         <div class="col-12">
+                             <div class="form-floating">
+                                 <textarea class="form-control" data-translate-placeholder="contact.formMessage" placeholder="Lascia un messaggio qui" id="message" name="message" style="height: 150px" required></textarea>
+                                 <label for="message" data-translate-key="contact.formMessage">Messaggio</label>
+                             </div>
+                         </div>
+                         <div class="col-12 text-center">
+                             <button class="btn btn-primary py-3 px-5" type="submit"><span data-translate-key="contact.formSend">Invia Messaggio</span> <i class="fas fa-paper-plane ms-2"></i></button>
+                         </div>
+                     </div>
+                 </form>
+             </div>
+          </div>
+          -->
       </div>
     </div>
-  </div>
-  <!-- Fine Contatti -->
-  
-<!-- Inizio Footer -->
-<footer class="pt-5 pb-3" style="background: linear-gradient(135deg, #1d1f21, #3c3f41);">
+  </section>
+
+<footer class="container-fluid bg-dark text-white py-5 mt-5">
     <div class="container">
-      <div class="row">
-        <!-- Profilo -->
-        <div class="col-md-4 mb-4">
-          <h5 class="text-uppercase mb-3">Matteo Cota</h5>
-          <p>
-            Web Developer appassionato, specializzato nello sviluppo di soluzioni web moderne e responsive. 
-            Trasformo idee innovative in progetti digitali di successo.
-          </p>          
+      <div class="row g-4">
+        <div class="col-md-4 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <h5 class="text-primary text-uppercase mb-4">Matteo Cota</h5>
+          <p class="mb-2" data-translate-key="footer.profileDesc">
+            Web Developer appassionato con sede in Italia. <br>Pronto a trasformare la tua visione digitale in realtà.
+          </p>
+          <p class="mb-0">© <span id="current-year"></span> <span data-translate-key="footer.rights">Tutti i diritti riservati.</span></p>
         </div>
-        <!-- Link Utili -->
-        <div class="col-md-4 mb-4">
-          <h5 class="text-uppercase mb-3">Link Utili</h5>
+        <div class="col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.3s">
+          <h5 class="text-primary text-uppercase mb-4" data-translate-key="footer.quickLinks">Link Rapidi</h5>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="#about" class="text-white text-decoration-none footer-link">Chi Sono</a></li>
-            <li class="mb-2"><a href="#skill" class="text-white text-decoration-none footer-link">Competenze</a></li>
-            <li class="mb-2"><a href="#project" class="text-white text-decoration-none footer-link">Progetti</a></li>
-            <li class="mb-2"><a href="#contact" class="text-white text-decoration-none footer-link">Contatti</a></li>
+            <li class="mb-2"><a href="#about" class="footer-link"><i class="fas fa-angle-right me-2"></i><span data-translate-key="nav.about">Chi Sono</span></a></li>
+            <li class="mb-2"><a href="#skill" class="footer-link"><i class="fas fa-angle-right me-2"></i><span data-translate-key="nav.skills">Competenze</span></a></li>
+            <li class="mb-2"><a href="#project" class="footer-link"><i class="fas fa-angle-right me-2"></i><span data-translate-key="nav.projects">Progetti</span></a></li>
+            <li class="mb-2"><a href="#contact" class="footer-link"><i class="fas fa-angle-right me-2"></i><span data-translate-key="nav.contact">Contatti</span></a></li>
+            <li class="mb-2"><a href="Matteo Cota - CV.pdf" class="footer-link" download><i class="fas fa-angle-right me-2"></i><span data-translate-key="hero.downloadCv">Download CV</span></a></li>
           </ul>
         </div>
-        <!-- Progetti Recenti -->
-        <div class="col-md-4 mb-4">
-          <h5 class="text-uppercase mb-3">Progetti Recenti</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2">
-              <a href="#project1" class="text-white text-decoration-none footer-link">
-                Boolando
-              </a>
-            </li>
-            <li class="mb-2">
-              <a href="#project2" class="text-white text-decoration-none footer-link">
-                Boolflix
-              </a>
-            </li>
-            <li class="mb-2">
-              <a href="#project3" class="text-white text-decoration-none footer-link">
-                DC-Comics
-              </a>
-            </li>
-            <li class="mb-2">
-                <a href="#project3" class="text-white text-decoration-none footer-link">
-                  BoolBnb
-                </a>
-              </li>
-            <li class="mb-2">
-            <a href="#project3" class="text-white text-decoration-none footer-link">
-                Spotify
-            </a>
-            <li class="mb-2">
-                <a href="#project3" class="text-white text-decoration-none footer-link">
-                  Boolzapp
-                </a>
-              </li>
-            </li> 
-          </ul>
-        </div>
-      </div>
-      <div class="row border-top border-secondary pt-3">
-        <div class="col-md-12 text-center">
-          &copy; 2025 <a href="#" class="text-white text-decoration-none">Portfolio di Matteo Cota</a>. Tutti i diritti riservati.
+         <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+            <h5 class="text-primary text-uppercase mb-4" data-translate-key="footer.projects">Progetti</h5>
+             <ul class="list-unstyled">
+               <li class="mb-2"><a href="#project" class="footer-link"><i class="fas fa-angle-right me-2"></i><span data-translate-key="projects.boolandoTitle">Boolando</span></a></li>
+               <li class="mb-2"><a href="#project" class="footer-link"><i class="fas fa-angle-right me-2"></i><span data-translate-key="projects.boolflixTitle">Boolflix</span></a></li>
+               <li class="mb-2"><a href="#project" class="footer-link"><i class="fas fa-angle-right me-2"></i><span data-translate-key="projects.dcComicsTitle">DC Comics</span></a></li>
+               <li class="mb-2"><a href="#project" class="footer-link"><i class="fas fa-angle-right me-2"></i><span data-translate-key="projects.boolbnbTitle">BoolBnB</span></a></li>
+            </ul>
+         </div>
+        <div class="col-md-12 col-lg-3 text-center text-lg-start wow fadeInUp" data-wow-delay="0.7s">
+             <h5 class="text-primary text-uppercase mb-4" data-translate-key="footer.connect">Connettiti</h5>
+             <p data-translate-key="footer.followMe">Seguimi sui social network:</p>
+             <div class="d-flex justify-content-center justify-content-lg-start pt-2">
+                <a class="btn btn-square btn-outline-light me-2 social-icon-footer" href="https://www.linkedin.com/in/matteo-cota/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-square btn-outline-light me-2 social-icon-footer" href="https://github.com/matteo-cota" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a class="btn btn-square btn-outline-light me-2 social-icon-footer" href="https://www.instagram.com/matteocota/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-square btn-outline-light me-2 social-icon-footer" href="https://www.facebook.com/MatteoCotaOfficial/?locale=it_IT" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+             </div>
+             <p class="mt-3 small"><span data-translate-key="footer.emailLabel">Email:</span> <a href="mailto:matteocota@outlook.it" class="footer-link">matteocota@outlook.it</a></p>
         </div>
       </div>
     </div>
   </footer>
-  <!-- Fine Footer -->
-  
-  
 
-<!-- Torna Su -->
-<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top shadow" aria-label="Torna su"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+<!-- MODAL DETTAGLI PROGETTO (Struttura Generica) -->
+<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel" data-translate-key="projectModal.titleDefault">Dettagli Progetto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <img id="modalProjectImage" src="" alt="Immagine Progetto" class="img-fluid rounded mb-3">
+                        <h4 id="modalProjectTitle">Nome Progetto</h4>
+                        <p class="text-muted small mb-3" id="modalProjectCategory">Categoria</p>
+                    </div>
+                    <div class="col-lg-6">
+                         <h5 data-translate-key="projectModal.descriptionTitle">Descrizione</h5>
+                         <p id="modalProjectDescription">Descrizione dettagliata del progetto...</p>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
+                         <h5 class="mt-3" data-translate-key="projectModal.technologiesTitle">Tecnologie Utilizzate</h5>
+                         <div id="modalProjectTech" class="d-flex flex-wrap gap-2 mb-3">
+                             <!-- I tag delle tecnologie verranno inseriti qui da JS -->
+                             <!-- Esempio: <span class="badge bg-light text-dark skill-tag-modal">HTML</span> -->
+                         </div>
+                         <div id="modalProjectChallenges" class="mb-3" style="display: none;"> <!-- Nascosto se non fornito -->
+                            <h5 class="mt-3" data-translate-key="projectModal.challengesTitle">Sfide & Soluzioni</h5>
+                            <p id="modalProjectChallengesText"></p>
+                         </div>
 
-</html>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                 <div>
+                     <a id="modalProjectLinkLive" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" style="display: none;">
+                         <i class="fa fa-link me-1"></i> <span data-translate-key="projectModal.visitSite">Visita Sito</span>
+                     </a>
+                     <a id="modalProjectLinkRepo" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark" style="display: none;">
+                        <i class="fab fa-github me-1"></i> <span data-translate-key="projectModal.viewCode">Vedi Codice</span>
+                     </a>
+                 </div>
+                 <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal" data-translate-key="projectModal.closeBtn">Chiudi</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FINE MODAL -->
 
+       <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="lib/wow/wow.min.js"></script>
+       <script src="lib/easing/easing.min.js"></script>
+       <script src="lib/waypoints/waypoints.min.js"></script>
+       <script src="lib/typed/typed.min.js"></script>
+       <script src="lib/counterup/counterup.min.js"></script>
+       <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+       <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+       <script src="lib/isotope/isotope.pkgd.min.js"></script>
+       <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-
-
+       <script src="js/main.js"></script>
+   </body>
+   </html>
