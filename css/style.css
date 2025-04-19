@@ -584,7 +584,7 @@ body.dark-mode .navbar {
 body.dark-mode .navbar.navbar-scrolled {
     background-color: var(--bs-secondary-bg) !important;
 }
-body.dark-mode .navbar .nav-link { color: #e9ecef; }
+body.dark-mode .navbar .nav-link .dropdown-item .lang-switch{ color: #e9ecef; }
 body.dark-mode .navbar .nav-link:hover,
 body.dark-mode .navbar .nav-link.active { color: var(--secondary); }
 body.dark-mode .navbar .nav-link::after { background-color: var(--secondary); }
