@@ -91,7 +91,54 @@ const translations = {
             spotifyDetail: "Vedi Dettaglio Spotify",
             spotifyVisit: "Visita il sito (link mancante)",
             spotifyCode: "Vedi Codice (link mancante)",
+            viewCaseStudy: "Dettagli",
+            viewDetailDefault: "Vedi Dettaglio Immagine",
+            boolandoTitle: "Boolando - Replica E-commerce", // Titolo più descrittivo
+            boolandoDesc: "Layout E-commerce (HTML/CSS)", // Descrizione breve
+            boolandoLongDesc: "Questo progetto formativo si è concentrato sulla creazione di un layout web complesso basato sul design di un noto sito di e-commerce di moda, utilizzando esclusivamente HTML e CSS. L'obiettivo principale era padroneggiare il posizionamento degli elementi (incluse card prodotto con effetti hover), la gestione degli spazi e la creazione di una struttura semanticamente corretta e il più possibile fedele al modello originale. Particolare attenzione è stata data all'implementazione di dettagli CSS come badge di sconto e cuori per i preferiti.",
+            boolandoChallenges: "La sfida maggiore è stata ottenere un layout responsive e preciso su diverse dimensioni di schermo senza l'ausilio di framework CSS o JavaScript, affidandosi unicamente alle tecniche CSS native come Flexbox e regole @media.",
+
+            // --- Boolflix ---
+            boolflixTitle: "Boolflix - Catalogo Film & Serie TV",
+            boolflixDesc: "App Catalogo Media (Vue.js, API)",
+            boolflixLongDesc: "Boolflix è un'applicazione web single-page costruita con Vue.js (utilizzando Vite per lo sviluppo) che permette agli utenti di cercare film e serie TV interrogando l'API pubblica di TheMovieDB. I risultati vengono mostrati dinamicamente in una griglia di card, ognuna contenente la locandina, il titolo originale e tradotto, la lingua (con relativa bandiera) e una valutazione media convertita in un sistema a 5 stelle. L'applicazione gestisce lo stato della ricerca e dei risultati in modo reattivo.",
+            boolflixChallenges: "Gestire le chiamate API asincrone in modo pulito con Axios e aggiornare l'interfaccia in base alla risposta è stata una sfida chiave. Altrettanto interessante è stato implementare la logica per mappare le sigle delle lingue alle icone delle bandiere e trasformare il voto decimale dell'API in un valore intero da 1 a 5 per la visualizzazione a stelle.",
+
+            // --- DC Comics ---
+            dcComicsTitle: "DC Comics - Gestione Catalogo",
+            dcComicsDesc: "Sito Vetrina con CRUD (Laravel)",
+            dcComicsLongDesc: "Questo progetto rappresenta un'applicazione web back-end realizzata con il framework PHP Laravel. Lo scopo era creare un sistema per visualizzare e gestire un catalogo di fumetti DC Comics. Sono state implementate le funzionalità CRUD (Create, Read, Update, Delete) complete per i fumetti, utilizzando il pattern MVC di Laravel, il sistema di routing, le migrazioni del database con Eloquent ORM e il templating engine Blade per le viste. È stata utilizzata anche SCSS, compilata tramite Vite, per lo styling.",
+            dcComicsChallenges: "Comprendere e applicare correttamente il flusso MVC di Laravel, gestire le richieste HTTP e le validazioni dei form lato server, e configurare correttamente le relazioni nel database tramite Eloquent sono state le principali aree di apprendimento.",
+
+            // --- BoolBnB ---
+            boolbnbTitle: "BoolBnB - Piattaforma Affitti",
+            boolbnbDesc: "App Full-Stack Affitti (Vue/Laravel)",
+            boolbnbLongDesc: "BoolBnB è una piattaforma web completa, sviluppata in team, che replica le funzionalità base di Airbnb. Il front-end, costruito con Vue.js e gestito tramite Vite, permette agli utenti di cercare appartamenti (anche tramite mappa interattiva usando le API TomTom), visualizzarne i dettagli, inviare messaggi ai proprietari e sponsorizzare i propri annunci tramite pagamenti gestiti con l'API Braintree. Il back-end, sviluppato in Laravel, gestisce l'autenticazione, le API REST per tutte le operazioni CRUD sugli appartamenti e i messaggi, le statistiche di visualizzazione e l'interazione con le API esterne.",
+            boolbnbChallenges: "La sfida principale è stata l'integrazione efficace tra front-end e back-end tramite API REST, la gestione dell'autenticazione sicura e l'implementazione di API di terze parti complesse come TomTom (per mappe e geocoding) e Braintree (per i pagamenti). Il lavoro di squadra, utilizzando Git per la collaborazione, è stato fondamentale per coordinare lo sviluppo delle diverse funzionalità.",
+
+            // --- Boolzapp ---
+            boolzappTitle: "Boolzapp - Replica Interfaccia Chat",
+            boolzappDesc: "Web App Chat UI (Vue.js)",
+            boolzappLongDesc: "Questo progetto consiste nella replica fedele dell'interfaccia utente web di WhatsApp utilizzando Vue.js. L'obiettivo era concentrarsi sulla creazione di componenti riutilizzabili e sulla gestione dello stato dell'interfaccia in modo dinamico. L'applicazione permette di visualizzare una lista di contatti, selezionare una chat, visualizzare i messaggi (con date e orari formattati tramite Luxon.js), inviare nuovi messaggi (con una risposta automatica simulata dopo un breve ritardo) e filtrare i contatti tramite una barra di ricerca.",
+            boolzappChallenges: "Replicare pixel-perfect un'interfaccia complessa come quella di WhatsApp, gestire la reattività dell'UI (aggiornamento dinamico delle chat e dei messaggi), e implementare logiche come la ricerca live e le risposte automatiche simulate sono state le sfide principali.",
+
+            // --- Spotify Web ---
+            spotifyTitle: "Spotify Web - Replica UI Player",
+            spotifyDesc: "Layout Web Player (HTML/CSS)",
+            spotifyLongDesc: "Questo esercizio di front-end si è focalizzato sulla riproduzione del layout dell'interfaccia web player di Spotify, usando solo HTML e CSS. È stata posta grande enfasi sulla creazione di una struttura semanticamente corretta e sull'utilizzo avanzato di Flexbox per gestire i complessi allineamenti dei vari componenti (sidebar, area principale, barra del player). Il layout è stato reso completamente responsive, adattandosi a diverse dimensioni di schermo, dai desktop ai dispositivi mobili.",
+            spotifyChallenges: "La sfida principale è stata ottenere un layout così articolato e responsive utilizzando solo CSS, in particolare gestendo la barra del player fissa in basso e assicurando che tutti gli elementi si ridimensionassero e riposizionassero correttamente su schermi più piccoli.",
+
+            // --- Altre Chiavi Esistenti ---
+            viewCaseStudy: "Dettagli",
+            viewDetailDefault: "Vedi Dettaglio Immagine",
+            // ...
+        
         },
+
+        projectModal: {
+            // ... (chiavi modal esistenti) ...
+            challengesTitle: "Sfide & Soluzioni", // Assicurati sia presente
+       },
         contact: {
              sectionTitle: "Mettiamoci in Contatto",
              sectionSubtitle: "Hai un progetto in mente o vuoi discutere una collaborazione? <br> Non esitare a scrivermi!",
@@ -208,6 +255,53 @@ const translations = {
             spotifyDetail: "View Spotify Detail",
             spotifyVisit: "Visit site (link missing)",
             spotifyCode: "View Code (link missing)",
+            viewCaseStudy: "Details",
+            viewDetailDefault: "View Image Detail", 
+             // --- Boolando ---
+             boolandoTitle: "Boolando - E-commerce Replica",
+             boolandoDesc: "E-commerce Layout (HTML/CSS)",
+             boolandoLongDesc: "This training project focused on creating a complex web layout based on the design of a well-known fashion e-commerce site, using only HTML and CSS. The main goal was to master element positioning (including product cards with hover effects), space management, and creating a semantically correct structure as faithful as possible to the original model. Particular attention was paid to implementing CSS details such as discount badges and favorite hearts.",
+             boolandoChallenges: "The biggest challenge was achieving a responsive and precise layout across different screen sizes without the help of CSS frameworks or JavaScript, relying solely on native CSS techniques like Flexbox and @media rules.",
+ 
+             // --- Boolflix ---
+             boolflixTitle: "Boolflix - Movie & TV Show Catalog",
+             boolflixDesc: "Media Catalog App (Vue.js, API)",
+             boolflixLongDesc: "Boolflix is a single-page web application built with Vue.js (using Vite for development) that allows users to search for movies and TV shows by querying TheMovieDB public API. Results are dynamically displayed in a card grid, each containing the poster, original and translated title, language (with corresponding flag), and an average rating converted to a 5-star system. The application reactively manages the search state and results.",
+             boolflixChallenges: "Cleanly managing asynchronous API calls with Axios and updating the interface based on the response was a key challenge. Implementing the logic to map language codes to flag icons and transforming the API's decimal rating into an integer value from 1 to 5 for the star display was also interesting.",
+ 
+             // --- DC Comics ---
+             dcComicsTitle: "DC Comics - Catalog Management",
+             dcComicsDesc: "Showcase Site with CRUD (Laravel)",
+             dcComicsLongDesc: "This project is a back-end web application built with the PHP framework Laravel. The purpose was to create a system for displaying and managing a catalog of DC Comics. Full CRUD (Create, Read, Update, Delete) functionalities for comics were implemented using Laravel's MVC pattern, routing system, database migrations with Eloquent ORM, and the Blade templating engine for views. SCSS, compiled via Vite, was also used for styling.",
+             dcComicsChallenges: "Understanding and correctly applying Laravel's MVC flow, handling HTTP requests and server-side form validations, and properly configuring database relationships through Eloquent were the main learning areas.",
+ 
+             // --- BoolBnB ---
+             boolbnbTitle: "BoolBnB - Rental Platform",
+             boolbnbDesc: "Full-Stack Rental App (Vue/Laravel)",
+             boolbnbLongDesc: "BoolBnB is a complete web platform, developed as a team, replicating the basic functionalities of Airbnb. The front-end, built with Vue.js and managed via Vite, allows users to search for apartments (also via an interactive map using TomTom APIs), view their details, send messages to owners, and sponsor their listings through payments managed with the Braintree API. The back-end, developed in Laravel, handles authentication, REST APIs for all CRUD operations on apartments and messages, view statistics, and interaction with external APIs.",
+             boolbnbChallenges: "The main challenge was the effective integration between front-end and back-end via REST APIs, secure authentication management, and the implementation of complex third-party APIs like TomTom (for maps and geocoding) and Braintree (for payments). Teamwork, using Git for collaboration, was crucial for coordinating the development of different features.",
+ 
+             // --- Boolzapp ---
+             boolzappTitle: "Boolzapp - Chat Interface Replica",
+             boolzappDesc: "Chat UI Web App (Vue.js)",
+             boolzappLongDesc: "This project consists of faithfully replicating the WhatsApp web user interface using Vue.js. The focus was on creating reusable components and managing the interface state dynamically. The application allows viewing a contact list, selecting a chat, viewing messages (with dates and times formatted using Luxon.js), sending new messages (with a simulated automatic reply after a short delay), and filtering contacts via a search bar.",
+             boolzappChallenges: "Pixel-perfect replication of a complex interface like WhatsApp, managing UI reactivity (dynamic updating of chats and messages), and implementing logic such as live search and simulated automatic replies were the main challenges.",
+ 
+             // --- Spotify Web ---
+             spotifyTitle: "Spotify Web - Player UI Replica",
+             spotifyDesc: "Web Player Layout (HTML/CSS)",
+             spotifyLongDesc: "This front-end exercise focused on reproducing the layout of the Spotify web player interface using only HTML and CSS. Great emphasis was placed on creating a semantically correct structure and advanced use of Flexbox to manage the complex alignments of various components (sidebar, main area, player bar). The layout was made fully responsive, adapting to different screen sizes, from desktops to mobile devices.",
+             spotifyChallenges: "The main challenge was achieving such an articulated and responsive layout using only CSS, particularly managing the fixed player bar at the bottom and ensuring all elements resized and repositioned correctly on smaller screens.",
+ 
+             // --- Other Existing Keys ---
+             viewCaseStudy: "Details",
+             viewDetailDefault: "View Image Detail",
+             // ...
+         },
+        
+         projectModal: {
+            // ... (existing modal keys) ...
+            challengesTitle: "Challenges & Solutions", // Ensure it's present
         },
          contact: {
              sectionTitle: "Let's Get In Touch",
@@ -332,6 +426,84 @@ document.addEventListener('DOMContentLoaded', () => {
             setStoredTheme(newTheme);
         });
     }
+
+     // 9. Gestione Apertura Modal DETTAGLI SPECIFICI Progetti
+     const projectDetailModalEl = document.getElementById('projectDetailModal');
+     if (projectDetailModalEl) {
+         // Seleziona gli elementi specifici del NUOVO modal
+         const modalDetailTitleEl = document.getElementById('modalDetailTitle');
+         const modalDetailImageEl = document.getElementById('modalDetailImage');
+         const modalDetailDescriptionEl = document.getElementById('modalDetailDescription');
+         const modalDetailTechEl = document.getElementById('modalDetailTech');
+         const modalDetailChallengesContainer = document.getElementById('modalDetailChallenges');
+         const modalDetailChallengesTextEl = document.getElementById('modalDetailChallengesText');
+         const modalDetailLinkLiveEl = document.getElementById('modalDetailLinkLive');
+         const modalDetailLinkRepoEl = document.getElementById('modalDetailLinkRepo');
+         const modalDialogLabel = document.getElementById('projectDetailModalLabel'); // Titolo header modal
+ 
+         projectDetailModalEl.addEventListener('show.bs.modal', function (event) {
+             const button = event.relatedTarget; // Bottone INFO che ha triggerato il modal
+             const lang = getStoredLang();
+ 
+             // Funzione helper per traduzioni (assicurati sia definita prima)
+             const getTranslation = (key) => key ? key.split('.').reduce((obj, i) => (obj ? obj[i] : null), translations[lang]) || key : '';
+ 
+             // Estrai i dati dal bottone
+             const titleKey = button.getAttribute('data-project-title-key');
+             const imgSrc = button.getAttribute('data-project-img');
+             const descriptionKey = button.getAttribute('data-project-desc-key');
+             const challengesKey = button.getAttribute('data-project-challenges-key');
+             const techString = button.getAttribute('data-project-tech');
+             const liveUrl = button.getAttribute('data-project-live-url');
+             const repoUrl = button.getAttribute('data-project-repo-url');
+ 
+             // Popola il Modal
+             const titleText = getTranslation(titleKey);
+             modalDetailTitleEl.textContent = titleText;
+             modalDialogLabel.textContent = titleText; // Aggiorna anche titolo header modal
+             modalDetailImageEl.src = imgSrc;
+             modalDetailImageEl.alt = `Screenshot ${titleText}`;
+             modalDetailDescriptionEl.innerHTML = getTranslation(descriptionKey);
+ 
+             // Popola tecnologie
+             modalDetailTechEl.innerHTML = ''; // Pulisci
+             if (techString) {
+                 techString.split(',').forEach(tech => {
+                     if (tech.trim()) {
+                         const span = document.createElement('span');
+                         // Applica stile simile ai tag delle skill
+                         span.className = 'skill-tag skill-tag-modal me-1 mb-1';
+                         span.textContent = tech.trim();
+                         modalDetailTechEl.appendChild(span);
+                     }
+                 });
+             }
+ 
+             // Popola Sfide (se presenti)
+              const challengesText = challengesKey ? getTranslation(challengesKey) : '';
+              if (challengesText) {
+                  modalDetailChallengesTextEl.innerHTML = challengesText;
+                  modalDetailChallengesContainer.style.display = 'block';
+              } else {
+                  modalDetailChallengesContainer.style.display = 'none';
+              }
+ 
+             // Gestisci link
+             if (liveUrl && liveUrl !== '#') {
+                 modalDetailLinkLiveEl.href = liveUrl;
+                 modalDetailLinkLiveEl.style.display = 'inline-block';
+             } else {
+                 modalDetailLinkLiveEl.style.display = 'none';
+             }
+ 
+             if (repoUrl && repoUrl !== '#') {
+                 modalDetailLinkRepoEl.href = repoUrl;
+                 modalDetailLinkRepoEl.style.display = 'inline-block';
+             } else {
+                 modalDetailLinkRepoEl.style.display = 'none';
+             }
+         });
+     }
 
     const langSwitches = document.querySelectorAll('.lang-switch');
     langSwitches.forEach(button => {
@@ -599,15 +771,66 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        if (typeof lightbox !== 'undefined') {
-            lightbox.option({
-              'resizeDuration': 200,
-              'wrapAround': true,
-              'fadeDuration': 300,
-              'imageFadeDuration': 300,
-              'disableScrolling': true
-            });
+           // ---> BLOCCO AGGIORNATO: AGGIORNAMENTO ATTRIBUTI PER LIGHTBOX (CON DEBUG) <---
+    const lightboxLinks = document.querySelectorAll('a[data-lightbox="portfolio"]');
+    console.log(`[Lightbox Debug] Trovati ${lightboxLinks.length} link lightbox.`); // DEBUG
+
+    lightboxLinks.forEach((link, index) => {
+        console.log(`[Lightbox Debug ${index}] Processo link:`, link.href); // DEBUG
+        const portfolioItem = link.closest('.portfolio-item'); // Trova il contenitore del progetto
+
+        if (portfolioItem) {
+            // Trova il titolo e la descrizione associati a questo specifico link lightbox
+            const titleEl = portfolioItem.querySelector('.portfolio-content h5[data-translate-key]');
+            const descEl = portfolioItem.querySelector('.portfolio-content p[data-translate-key]');
+
+            const titleKey = titleEl ? titleEl.dataset.translateKey : null;
+            const descKey = descEl ? descEl.dataset.translateKey : null;
+            console.log(`[Lightbox Debug ${index}] Chiavi trovate: Title='${titleKey}', Desc='${descKey}'`); // DEBUG
+
+            // Ottieni le traduzioni correnti
+            const currentLang = getStoredLang(); // Assicurati che lang sia definita qui
+            const getTranslation = (key) => key ? key.split('.').reduce((obj, i) => (obj ? obj[i] : null), translations[currentLang]) : null; // Usa helper
+
+            const titleText = getTranslation(titleKey) || ''; // Fallback a stringa vuota se non trovato
+            const descText = getTranslation(descKey) || ''; // Fallback a stringa vuota
+            console.log(`[Lightbox Debug ${index}] Testi tradotti: Title='${titleText}', Desc='${descText}'`); // DEBUG
+
+            // Crea la stringa per data-title (usata da Lightbox come didascalia)
+            let lightboxCaption = titleText;
+            if (descText) {
+                // Usa HTML semplice e valido per la didascalia
+                lightboxCaption += ` <span class='lightbox-caption-desc'>(${descText.replace(/"/g, '"')})</span>`; // Escapa eventuali virgolette nella descrizione
+            }
+
+            // Verifica che lightboxCaption sia una stringa valida prima di assegnarla
+            if (typeof lightboxCaption === 'string') {
+                link.setAttribute('data-title', lightboxCaption.trim());
+                console.log(`[Lightbox Debug ${index}] data-title impostato:`, lightboxCaption.trim()); // DEBUG
+            } else {
+                 link.setAttribute('data-title', 'Errore Didascalia'); // Fallback se qualcosa va storto
+                 console.error(`[Lightbox Debug ${index}] Errore: lightboxCaption non è una stringa valida.`, lightboxCaption); // DEBUG
+            }
+
+
+            // Aggiorna anche l'attributo title standard (tooltip)
+            const detailKey = link.dataset.translateTitle;
+             const detailText = getTranslation(detailKey) || '';
+             const defaultTooltip = getTranslation('projects.viewDetailDefault') || 'View Detail'; // Chiave per tooltip default
+
+            if (detailText) {
+                link.setAttribute('title', detailText);
+            } else {
+                link.setAttribute('title', titleText || defaultTooltip); // Usa titolo progetto o default
+            }
+             console.log(`[Lightbox Debug ${index}] title impostato:`, link.getAttribute('title')); // DEBUG
+
+        } else {
+            console.warn(`[Lightbox Debug ${index}] Contenitore .portfolio-item non trovato per il link:`, link); // DEBUG
+            link.setAttribute('data-title', 'Errore: Item non trovato'); // Fallback
         }
+    });
+    // ---> FINE BLOCCO LIGHTBOX <---
     }
 
     $('#current-year').text(new Date().getFullYear());

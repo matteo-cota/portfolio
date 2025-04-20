@@ -996,3 +996,89 @@ body.dark-mode .portfolio-overlay .btn-case-study:hover {
 /* Rimuovi l'animazione WOW di default se presente per gli elementi che ora usano data-animate */
 /* Ad esempio, potresti cercare nel CSS `.wow` o classi specifiche come `.fadeInUp` e commentarle o rimuoverle */
 /* Oppure semplicemente rimuovere le classi wow e fadeInUp dall'HTML */
+
+
+/* Stile per la descrizione nella didascalia Lightbox */
+.lb-caption .lightbox-caption-desc {
+    display: block; /* Mette la descrizione su una nuova riga */
+    font-size: 0.9em; /* Leggermente più piccola del titolo */
+    color: #bbb;    /* Colore più tenue */
+    margin-top: 0.3rem;
+}
+
+
+body.dark-mode .lb-caption .lightbox-caption-desc {
+    color: #6c757d;
+}
+
+/* === Stili Modal Dettagli Progetto Specifico === */
+#projectDetailModal .modal-dialog {
+    /* max-width: 900px; */ /* Già impostato con modal-xl */
+}
+#projectDetailModal .modal-content {
+    border-radius: var(--border-radius);
+    border: none;
+    background-color: var(--bs-body-bg, #fff);
+}
+#projectDetailModal .modal-header {
+    border-bottom: 1px solid var(--bs-border-color, #dee2e6);
+    padding: 1rem 1.5rem; /* Più padding nell'header */
+}
+#projectDetailModal .modal-body {
+     padding: 1.5rem; /* Più padding nel body */
+}
+#projectDetailModal .modal-title { /* Titolo nell'header */
+    color: var(--primary);
+    font-family: var(--font-family-heading);
+    font-size: 1.4rem; /* Leggermente più grande */
+}
+body.dark-mode #projectDetailModal .modal-title {
+    color: var(--primary);
+}
+
+#projectDetailModal h3 { /* Titolo sotto immagine */
+     color: var(--bs-body-color); /* Colore testo standard */
+     font-weight: 700;
+     margin-top: 0.5rem;
+}
+#projectDetailModal h5 { /* Titoli sezioni (Descrizione, Tecnologie, Sfide) */
+     font-family: var(--font-family-heading);
+     font-weight: 600;
+     color: var(--primary);
+     margin-bottom: 0.6rem;
+}
+body.dark-mode #projectDetailModal h5 {
+     color: var(--primary);
+}
+
+/* Stile per i tag tecnologia dentro il modal specifico */
+#projectDetailModal .skill-tag-modal {
+    display: inline-block; /* Aggiunto per mb */
+    padding: 0.35em 0.7em;
+    font-size: 0.85em;
+    font-weight: 600;
+    border-radius: 15px;
+    background-color: var(--bs-tertiary-bg, #e9ecef);
+    color: var(--bs-body-color, var(--dark));
+    border: 1px solid transparent; /* Nessun bordo di default */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.dark-mode #projectDetailModal .skill-tag-modal {
+     background-color: var(--bs-secondary-bg);
+     color: var(--bs-body-color);
+}
+
+#projectDetailModal .btn-sm { /* Bottoni Live/Repo */
+     font-size: 0.8rem;
+     padding: 0.4rem 0.9rem;
+}
+
+/* Aggiusta bottone chiudi per dark mode (se non già fatto) */
+body.dark-mode #projectDetailModal .btn-close {
+     filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Stile per il nuovo bottone Info nell'overlay */
+.portfolio-overlay .btn.btn-sm i.fa-info-circle {
+    /* Eventuali stili specifici se necessario */
+}
