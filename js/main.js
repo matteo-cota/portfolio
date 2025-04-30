@@ -15,7 +15,7 @@ const translations = {
         hero: {
             iAm: "// Sono",
             name: "Matteo Cota",
-            typedText: "Sviluppatore Web, Sviluppatore Front End, Sviluppatore Back End, Risolutore di Problemi Creativo",
+            typedText: "Sviluppatore Full Stack Web, Sviluppatore Front End, Sviluppatore Back End",
             description: "Trasformo idee in codice, creando esperienze web coinvolgenti e funzionali.",
             downloadCv: "Download CV",
             contactMe: "Contattami"
@@ -179,7 +179,7 @@ const translations = {
         hero: {
             iAm: "// I Am",
             name: "Matteo Cota",
-            typedText: "Web Developer, Front End Developer, Back End Developer, Creative Problem Solver",
+            typedText: "Web Developer Full Stack, Front End Developer, Back End Developer",
             description: "I transform ideas into code, creating engaging and functional web experiences.",
             downloadCv: "Download CV",
             contactMe: "Contact Me"
